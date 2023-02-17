@@ -23,11 +23,11 @@ public class Auto {
         if (this.registro == motor.registro){
             for(Asiento asiento:asientos){
                 if(asiento != null) {
-                    if (this.registro != asiento.registro) break;
+                    if (this.registro != asiento.registro) return "Las piezas no son originales";
                 }
             }
-            return "Auto original";
         }
-        return "Las piezas no son originales";
+        return "Auto original";
+
     }
 }
